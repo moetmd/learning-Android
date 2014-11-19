@@ -1,0 +1,93 @@
+package org.niit.myapp;
+
+import android.app.Activity;
+import android.app.ActionBar;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckedTextView;
+import android.widget.EditText;
+import android.widget.NumberPicker;
+import android.widget.RatingBar;
+import android.widget.Toast;
+import android.os.Build;
+
+public class MainActivity extends Activity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		Button login_bt = (Button)findViewById(R.id.button2);
+		Button reset_bt = (Button)findViewById(R.id.button1);
+		RatingBar rating_bar1 = (RatingBar)findViewById(R.id.ratingBar1);
+		final CheckedTextView c_tx = (CheckedTextView)findViewById(R.id.cTextView1);
+		final NumberPicker n_p = (NumberPicker)findViewById(R.id.numberPicker1);
+		final EditText name_ui = (EditText)findViewById(R.id.editText1);
+		final EditText password_ui = (EditText)findViewById(R.id.editText2);
+		
+		login_bt.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				String name = name_ui.getText().toString();
+				String password = password_ui.getText().toString();
+				
+				if("xf".equalsIgnoreCase(name) && "123".equals(password)){
+					Toast.makeText(MainActivity.this, "µÇÂ½³É¹¦", Toast.LENGTH_LONG).show();
+				}else{
+					Toast.makeText(MainActivity.this, "µÇÂ½Ê§°Ü", Toast.LENGTH_LONG).show();
+				}
+			}
+		});
+		
+		
+		reset_bt.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				name_ui.setText("");
+				password_ui.setText("");
+				
+				rating_bar1.getNumStars();
+				
+				c_tx.setText(n_p.getContentDescription());
+				
+
+			}
+		});
+		
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+
+}

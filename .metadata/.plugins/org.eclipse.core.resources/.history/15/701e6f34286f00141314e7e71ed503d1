@@ -1,0 +1,10 @@
+package com.niit.sqlite;
+
+import android.app.Activity;
+import android.app.Application.ActivityLifecycleCallbacks;
+import android.os.Bundle;
+
+public class ShowActivity extends Activity {
+
+	
+}

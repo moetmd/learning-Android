@@ -1,0 +1,26 @@
+package com.niit.sqlite;
+
+import android.app.Activity;
+import android.app.Application.ActivityLifecycleCallbacks;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.ListView;
+
+public class ShowActivity extends Activity {
+	
+	private SQLiteDatabase db;
+	private ListView listview;
+	private EditText searchtxt;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		
+		
+		
+	}
+
+	
+}

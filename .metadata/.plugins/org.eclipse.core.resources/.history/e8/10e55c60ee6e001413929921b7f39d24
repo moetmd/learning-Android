@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.niit.keyvaluedemo.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/show_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/show_info"
+        android:layout_below="@+id/show_info"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="用户名" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_name"
+        android:layout_below="@+id/et_name"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_pwd"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginTop="28dp"
+        android:text="存储" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/et_name"
+        android:text="Button" />
+
+</RelativeLayout>
+

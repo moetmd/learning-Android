@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.widget.CheckedTextView"/>
+<fullyQualifiedTypeName name="android.widget.NumberPicker"/>
+<fullyQualifiedTypeName name="android.widget.RatingBar"/>
+<fullyQualifiedTypeName name="org.niit.myapp.R.layout"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="org.niit.myapp.ErrorActivity"/>
+<fullyQualifiedTypeName name="org.niit.myapp.MainActivity"/>
+<fullyQualifiedTypeName name="org.niit.myapp.R.id"/>
+<fullyQualifiedTypeName name="org.niit.entity.User"/>
+<fullyQualifiedTypeName name="android.preference.Preference"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences.Editor"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="com.niit.keyvaluedemo.R.id"/>
+<fullyQualifiedTypeName name="android.database.sqlite.SQLiteDatabase"/>
+<fullyQualifiedTypeName name="android.widget.ListView"/>
+<fullyQualifiedTypeName name="com.niit.sqlite.R.layout"/>
+<fullyQualifiedTypeName name="com.niit.sqlite.R.id"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.widget.EditText"/>
+</qualifiedTypeNameHistroy>

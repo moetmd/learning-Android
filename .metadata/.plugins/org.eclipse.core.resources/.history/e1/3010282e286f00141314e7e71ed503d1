@@ -1,0 +1,51 @@
+package com.niit.sqlite;
+
+import android.app.Activity;
+import android.app.Application.ActivityLifecycleCallbacks;
+import android.os.Bundle;
+
+public class ShowActivity implements ActivityLifecycleCallbacks {
+
+	@Override
+	public void onActivityCreated(Activity arg0, Bundle arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onActivityDestroyed(Activity arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onActivityPaused(Activity arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onActivityResumed(Activity arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onActivitySaveInstanceState(Activity arg0, Bundle arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onActivityStarted(Activity arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void onActivityStopped(Activity arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

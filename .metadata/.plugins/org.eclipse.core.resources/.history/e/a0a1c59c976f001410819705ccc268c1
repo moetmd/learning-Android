@@ -1,0 +1,47 @@
+package com.niit.contentproviderdemo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import android.app.Activity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+/**
+ * 显示查询的数据
+ */
+public class ShowActivity extends Activity {
+	
+	private SQLiteDatabase db;
+	private ListView  listview;
+	private EditText  searchtxt;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.show);
+		
+		listview=(ListView)findViewById(R.id.listView1);
+		Button  bnt=(Button)findViewById(R.id.search_bnt);
+			
+		
+		//查询按钮
+		bnt.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+
+				ArrayAdapter<Object>  adapter=new ArrayAdapter<Object>(
+						ShowActivity.this,R.layout.show_item,arr);
+				//设置显示
+				listview.setAdapter(adapter);
+			}
+		});
+		
+	}
+}
