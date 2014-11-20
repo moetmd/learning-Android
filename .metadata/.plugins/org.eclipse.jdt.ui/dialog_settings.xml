@@ -13,15 +13,15 @@
 	<section name="DialogBounds_SuperInterfaceSelectionDialog">
 		<item value="365" key="DIALOG_WIDTH"/>
 		<item value="11" key="DIALOG_Y_ORIGIN"/>
-		<item value="423" key="DIALOG_HEIGHT"/>
 		<item value="96" key="DIALOG_X_ORIGIN"/>
+		<item value="423" key="DIALOG_HEIGHT"/>
 		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="SourceActionDialog.methods">
-		<item value="false" key="Comments"/>
 		<item value="1" key="VisibilityModifier"/>
+		<item value="false" key="Comments"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
@@ -35,8 +35,8 @@
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="0" key="DIALOG_Y_ORIGIN"/>
-			<item value="-22" key="DIALOG_X_ORIGIN"/>
 			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="-44" key="DIALOG_X_ORIGIN"/>
 			<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
 		</section>
 	</section>
@@ -54,8 +54,8 @@
 	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
 		<item value="570" key="DIALOG_WIDTH"/>
 		<item value="4" key="DIALOG_Y_ORIGIN"/>
-		<item value="585" key="DIALOG_HEIGHT"/>
 		<item value="402" key="DIALOG_X_ORIGIN"/>
+		<item value="585" key="DIALOG_HEIGHT"/>
 		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="NewClassWizardPage">

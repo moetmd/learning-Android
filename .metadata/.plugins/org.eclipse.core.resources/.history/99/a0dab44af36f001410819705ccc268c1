@@ -1,0 +1,13 @@
+
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb = new StringBuffer();
+		sb.append(" 1");
+		
+		System.out.println(sb);
+	}
+
+}

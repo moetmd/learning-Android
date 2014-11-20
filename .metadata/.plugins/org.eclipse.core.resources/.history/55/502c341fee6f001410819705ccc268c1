@@ -1,0 +1,11 @@
+package com.niit.calculator;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer sb = new StringBuffer();
+		System.out.println(sb);
+	}
+
+}

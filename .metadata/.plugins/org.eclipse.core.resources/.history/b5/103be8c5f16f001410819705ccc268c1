@@ -1,0 +1,232 @@
+package com.niit.calculator;
+
+import java.util.List;
+
+import android.app.Activity;
+import android.app.ActionBar;
+import android.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+import android.os.Build;
+
+public class MainActivity extends Activity {
+
+	StringBuffer sb = new StringBuffer();
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	
+		final TextView tv = (TextView)findViewById(R.id.textView1);
+		
+		Button b_0 = (Button)findViewById(R.id.b_0);
+		Button b_1 = (Button)findViewById(R.id.b_1);
+		Button b_2 = (Button)findViewById(R.id.b_2);
+		Button b_3 = (Button)findViewById(R.id.b_3);
+		Button b_4 = (Button)findViewById(R.id.b_4);
+		Button b_5 = (Button)findViewById(R.id.b_5);
+		Button b_6 = (Button)findViewById(R.id.b_6);
+		Button b_7 = (Button)findViewById(R.id.b_7);
+		Button b_8 = (Button)findViewById(R.id.b_8);
+		Button b_9 = (Button)findViewById(R.id.b_9);
+		
+		Button b_plus = (Button)findViewById(R.id.b_plus);
+		Button b_minus = (Button)findViewById(R.id.b_minus);
+		Button b_times = (Button)findViewById(R.id.b_times);
+		Button b_div = (Button)findViewById(R.id.b_div);
+		
+		Button b_ce = (Button)findViewById(R.id.b_ce);
+		Button b_eq = (Button)findViewById(R.id.b_eq);
+		
+		
+		//Listener
+		tv.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				
+			}
+		});
+		
+		b_0.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("0");
+				tv.setText(sb);
+			}
+		});
+		b_1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("1");
+				tv.setText(sb);
+			}
+		});
+		b_2.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("2");
+				tv.setText(sb);
+			}
+		});
+		b_3.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("3");
+				tv.setText(sb);
+			}
+		});
+		b_4.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("4");
+				tv.setText(sb);
+			}
+		});
+		b_5.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("5");
+				tv.setText(sb);
+			}
+		});
+		b_6.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("6");
+				tv.setText(sb);
+			}
+		});
+		b_7.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("7");
+				tv.setText(sb);
+			}
+		});
+		b_8.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("8");
+				tv.setText(sb);
+			}
+		});
+		b_9.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("9");
+				tv.setText(sb);
+			}
+		});
+		
+		b_plus.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("+");
+				tv.setText(sb);
+			}
+		});
+		b_minus.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("-");
+				tv.setText(sb);
+			}
+		});
+		b_times.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("*");
+				tv.setText(sb);
+			}
+		});
+		b_div.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.append("/");
+				tv.setText(sb);
+			}
+		});
+		
+		b_ce.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				sb.delete(0, sb.length());
+				tv.setText(sb);
+			}
+		});
+		
+		b_eq.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				
+				//此处需要返回根据字符串求等式的值赋给sb
+				
+				sb.delete(0, sb.length());
+				tv.setText(sb);
+			}
+		});
+		
+		
+		
+
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}
