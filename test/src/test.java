@@ -12,5 +12,10 @@ public class test {
 		}
 		System.out.println("this is written by vim");
 		System.out.println(sb);
+		
+		
+		String x = "This is a string input by vim ";
+		
+		
 	}
 }

@@ -19,7 +19,7 @@ import android.os.Build;
 public class MainActivity extends Activity {
 
 	StringBuffer sb = new StringBuffer();
-	
+	StringProcess sp = new StringProcess();
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -211,9 +211,7 @@ public class MainActivity extends Activity {
 				// TODO Auto-generated method stub
 				
 				//此处需要返回根据字符串求等式的值赋给sb
-				
-				sb.delete(0, sb.length());
-				tv.setText(sb);
+				tv.setText(sp.caculate(sb.toString()).toString());
 			}
 		});
 		

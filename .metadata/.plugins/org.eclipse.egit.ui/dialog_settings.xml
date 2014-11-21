@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="true" key="CommitDialog.showUntracked"/>
+	<list key="CommitDialog.authorValues">
+		<item value="xfningxia &lt;xfningxia@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="xfningxia &lt;xfningxia@gmail.com&gt;"/>
+	</list>
 	<list key="RepositorySelectionPage.UsedUris">
 		<item value="https://github.com/xfningxia/learning-Android.git"/>
 	</list>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.COMMIT_DIALOG_SECTION">
+		<item value="634" key="DIALOG_WIDTH"/>
+		<item value="4" key="DIALOG_Y_ORIGIN"/>
+		<item value="622" key="DIALOG_HEIGHT"/>
+		<item value="370" key="DIALOG_X_ORIGIN"/>
+		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
+	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item value="658" key="DIALOG_WIDTH"/>
 		<item value="81" key="DIALOG_Y_ORIGIN"/>
-		<item value="439" key="DIALOG_HEIGHT"/>
 		<item value="358" key="DIALOG_X_ORIGIN"/>
+		<item value="439" key="DIALOG_HEIGHT"/>
 		<item value="1|宋体|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|宋体" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>
